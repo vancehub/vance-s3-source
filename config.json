@@ -1,0 +1,6 @@
+{
+  "region": "us-west-2",
+  "S3_Bucket_ARN": "arn:aws:s3:::xdltest-triggermesh2",
+  "S3_Events": ["s3:ObjectCreated:*","s3:ObjectRemoved:*"],
+  "sink": ["http://192.168.1.100:8082"]
+}

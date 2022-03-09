@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  s3:
+    image: vancehub/s3-source:v1
+    configs:
+      - source: vance_s3_config
+        target: "/vance/config.json"
+      - source: vance_s3_secret
+        target: "/root/.aws/credentials"
+configs:
+  vance_s3_config:
+    external: true
+  vance_s3_secret:
+    external: true
